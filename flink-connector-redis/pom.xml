@@ -25,7 +25,7 @@ under the License.
         <groupId>org.apache.bahir</groupId>
         <artifactId>bahir-flink-parent</artifactId>
         <version>1.2-SNAPSHOT</version>
-        <relativePath>..</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>flink-connector-redis</artifactId>

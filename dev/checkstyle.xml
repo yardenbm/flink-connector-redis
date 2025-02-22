@@ -16,8 +16,8 @@
   -->
 
 <!DOCTYPE module PUBLIC
-          "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
-          "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
 <!--
 
@@ -49,7 +49,7 @@
     <property name="fileExtensions" value="java, properties, xml"/>
 
     <module name="SuppressionFilter">
-      <property name="file" value="dev/checkstyle-suppressions.xml"/>
+        <property name="file" value="dev/checkstyle-suppressions.xml"/>
     </module>
 
     <!-- Checks for whitespace                               -->
@@ -102,28 +102,28 @@
         <module name="PackageName">
             <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
             <message key="name.invalidPattern"
-             value="Package name ''{0}'' must match pattern ''{1}''."/>
+                     value="Package name ''{0}'' must match pattern ''{1}''."/>
         </module>
         <module name="ClassTypeParameterName">
             <property name="format" value="([A-Z][a-zA-Z0-9]*$)"/>
             <message key="name.invalidPattern"
-             value="Class type name ''{0}'' must match pattern ''{1}''."/>
+                     value="Class type name ''{0}'' must match pattern ''{1}''."/>
         </module>
         <module name="MethodTypeParameterName">
             <property name="format" value="([A-Z][a-zA-Z0-9]*)"/>
             <message key="name.invalidPattern"
-             value="Method type name ''{0}'' must match pattern ''{1}''."/>
+                     value="Method type name ''{0}'' must match pattern ''{1}''."/>
         </module>
         <module name="NoFinalizer"/>
         <module name="GenericWhitespace">
             <message key="ws.followed"
-             value="GenericWhitespace ''{0}'' is followed by whitespace."/>
-             <message key="ws.preceded"
-             value="GenericWhitespace ''{0}'' is preceded with whitespace."/>
-             <message key="ws.illegalFollow"
-             value="GenericWhitespace ''{0}'' should followed by whitespace."/>
-             <message key="ws.notPreceded"
-             value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
+                     value="GenericWhitespace ''{0}'' is followed by whitespace."/>
+            <message key="ws.preceded"
+                     value="GenericWhitespace ''{0}'' is preceded with whitespace."/>
+            <message key="ws.illegalFollow"
+                     value="GenericWhitespace ''{0}'' should followed by whitespace."/>
+            <message key="ws.notPreceded"
+                     value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
         <!-- TODO: 11/09/15 disabled - indentation is currently inconsistent -->
         <!--
@@ -155,15 +155,15 @@
         <module name="MethodName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
             <message key="name.invalidPattern"
-             value="Method name ''{0}'' must match pattern ''{1}''."/>
+                     value="Method name ''{0}'' must match pattern ''{1}''."/>
         </module>
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
         <module name="UnusedImports">
-          <!-- Allow imports for JavaDocs -->
-          <property name="processJavadoc" value="true"/>
+            <!-- Allow imports for JavaDocs -->
+            <property name="processJavadoc" value="true"/>
         </module>
         <module name="RedundantImport"/>
         <module name="RedundantModifier"/>
